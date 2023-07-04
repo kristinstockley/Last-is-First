@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: cadetblue;
+}
+
+.header {
+  flex: 0 0 auto;
+  background-color: #333;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.instructions {
+  text-align: center;
+  background-color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 2rem;
+}
+
+.instructions li{
+  list-style: none;
+}
+
+
+.game {
+  flex: 1 1 auto;
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 1rem;
+  align-items: center;
+  justify-items: center;
+  padding: 1rem;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+}
+
+
+#new-word-input {
+  width: 100%;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+#add-word-button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}
+
+
+#words-list {
+  font-size: 1.2rem;
+  margin: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+

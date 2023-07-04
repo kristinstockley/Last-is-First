@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Word Game: Last Placed is the New First Placed</h1>
+        </div>
+        <div class="instructions">
+            <h3>Instructions:</h3>
+            <ul>
+                <li>Enter any word to begin.</li>
+                <li>The next word must start with the same letter as the previous word's last letter.</li>
+                <li>You will have 60 seconds to create as many words as possible.</li>
+                <li>You will gain 1 point for each word you add to the list, and lose 1 point if incorrect.</li>
+                <li>To start a new game, refresh the page.</li>
+            </ul>
+        </div>
+
+        <div class="game">
+            <div class="scoreboard">
+                <p>Score: <span id="score">0</span></p>
+                <p>Time: <span id="time">30</span></p>
+            </div>
+            <div class="display-word">
+                <h2>Enter Word:</h2>
+                <input type="text" name="new-word" id="new-word-input">
+                <button id="add-word-button">Submit</button>
+                <ul id="words-list">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -77,3 +77,26 @@ addWordButtonElement.addEventListener("click", respondToWordSubmit);
 modal.addEventListener("click", closeModal);
 
 timerInterval = setInterval(updateTimer, 1000);
+
+
+function resetGame() {
+  wordsUsed.length = 0;
+  score = 0;
+  time = 30;
+
+  newWordInputElement.value = "";
+  renderList();
+  displayScore();
+  timeElement.textContent = time;
+
+  clearInterval(timerInterval);
+  timerInterval = setInterval(updateTimer, 1000);
+
+  closeModal();
+}
+
+
+const resetButtonElement = document.querySelector("#reset-button");
+resetButtonElement.addEventListener("click", resetGame);
+
+

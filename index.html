@@ -21,7 +21,7 @@
 						The next word must start with the same letter as the previous word's
 						last letter.
 					</li>
-					<li>You will have 60 seconds to create as many words as possible.</li>
+					<li>You will have 30 seconds to create as many words as possible.</li>
 					<li>
 						You will gain 1 point for each word you add to the list, and lose 1
 						point if incorrect.
@@ -35,10 +35,13 @@
 					<p>Score: <span id="score">0</span></p>
 					<p>Time: <span id="time">30</span></p>
 				</div>
+                <div class="reset-button-container">
+                    <button id="reset-button">Restart Game</button>
+                  </div>
+
 				<div class="display-word">
 					<h2>Enter Word:</h2>
 					<input type="text" name="new-word" id="new-word-input" />
-					<br />
 					<button id="add-word-button">Submit</button>
 					<ul id="words-list"></ul>
 				</div>
